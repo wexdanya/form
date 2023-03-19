@@ -4,6 +4,7 @@ import HomePage from "./Pages/HomePage";
 import SignupPage from "./Pages/SignupPage";
 import LoginPage from "./Pages/LoginPage";
 import Header from "./components/Header/index";
+import ErrorPage from './Pages/ErrorPage';
 function App() {
   return (
     <>
@@ -13,6 +14,7 @@ function App() {
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/signup"} element={<SignupPage />} />
           <Route path={"/login"} element={<LoginPage />} />
+          <Route path={"*"} element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </>
