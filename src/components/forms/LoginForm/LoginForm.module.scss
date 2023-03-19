@@ -1,0 +1,52 @@
+@import "./../../../common/_colors";
+
+.form {
+  width: 100%;
+  max-width: 900px;
+  margin-top: 25px;
+  padding: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  .input {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1.3rem 1.8rem;
+    border-radius: 5px;
+  }
+  .button {
+    cursor: pointer;
+    background-color: $light-green;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 1.3rem 1.8rem;
+    border-radius: 5px;
+    color: $white;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .rememberMe {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+  }
+  .fielWrapper {
+    width: 100%;
+    position: relative;
+  }
+  .errorMesage {
+    position: absolute;
+    top: 12px;
+    background-color: rgba(255, 0, 0, 0.483);
+    padding: 10px 20px;
+    right: 10px;
+    border-radius: 5px;
+    font-size: .9rem;
+    text-transform: uppercase;
+    color: $white;
+
+  }
+}
